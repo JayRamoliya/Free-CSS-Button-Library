@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 const Navbar = () => {
   return (
@@ -33,9 +34,19 @@ const Navbar = () => {
           <Link to="/favorites" className="text-sm font-medium hover:text-brand transition-colors">
             Favorites
           </Link>
+          <Link to="/about" className="text-sm font-medium hover:text-brand transition-colors">
+            About
+          </Link>
+          <Link to="/docs" className="text-sm font-medium hover:text-brand transition-colors">
+            Docs
+          </Link>
+          <Link to="/submit" className="text-sm font-medium hover:text-brand transition-colors">
+            Submit
+          </Link>
         </nav>
         
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <Button variant="outline" size="icon" className="hidden sm:flex">
             <Search className="h-4 w-4" />
           </Button>
