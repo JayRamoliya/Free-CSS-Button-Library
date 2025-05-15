@@ -2284,4 +2284,5 @@ export const buttonStyles: ButtonStyle[] = [
     "isNew": true,
     "isFeatured": false
   },
+
 ];
